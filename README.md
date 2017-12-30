@@ -53,7 +53,9 @@ To install the controller software and the rc script:
     fetch -o - https://git.io/j7Jy | sh -s
   ```
 
-The install script will install dependencies, download the UniFi controller software, make some adjustments, and start the UniFi controller.
+The install script will install dependencies, download the UniFi controller software, make some adjustments, and start the UniFi controller. The default port is 8080 for HTTP and 8443 for HTTPS. You may need to add a firewall rule to allow access.
+
+Visit http://pfsense-ip:8080/ or https://pfsense-ip:8443/ (and there will probably be a TLS certificate mismatch)
 
 The git.io link above should point to `https://raw.githubusercontent.com/gozoinks/unifi-pfsense/master/install-unifi/install-unifi.sh`
 
